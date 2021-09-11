@@ -10,6 +10,15 @@ $green: #51cf66;
   &:active {
     background: darken($color, 10%);
   }
+  &.outline {
+    color: $color;
+    background: none;
+    border: 1px solid $color;
+    &:hover {
+      background: $color;
+      color: white;
+    }
+  }
 }
 
 .Button {
@@ -57,5 +66,15 @@ $green: #51cf66;
   // 버튼과 버튼이 같이 있으면 스타일 적용
   & + & {
     margin-left: 1rem;
+  }
+
+  // fullWith 존재 시
+  &.fullWidth {
+    width: 100%;
+    justify-content: center;
+    & + & {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
   }
 }

@@ -6,18 +6,23 @@ function App() {
     <div className="App">
       <div className="buttons">
         <Button size="large">Button</Button>
-        <Button size='medium'>Button</Button>
+        <Button>Button</Button>
         <Button size='small'>Button</Button>
       </div>
       <div className="buttons">
         <Button color='lime' size="large">Button</Button>
-        <Button color='lime' size='medium'>Button</Button>
+        <Button color='lime'>Button</Button>
         <Button color='lime' size='small'>Button</Button>
       </div>
       <div className="buttons">
         <Button color='green' size="large">Button</Button>
-        <Button color='green' size='medium'>Button</Button>
+        <Button color='green'>Button</Button>
         <Button color='green' size='small'>Button</Button>
+      </div>
+      <div className="buttons">
+        <Button size="large" fullWidth>Button</Button>
+        <Button color="lime" fullWidth>Button</Button>
+        <Button color="green" size='small' fullWidth>Button</Button>
       </div>
     </div>
   );
